@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Open+Sans&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    font-family: 'Open Sans', sans-serif;
+    animation: fondo 5s infinite alternate;
+}
+
+@keyframes fondo {
+    from { background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); }
+    to { background: linear-gradient(45deg, #ffecd2 0%, #fcb69f 100%); }
+}
+
+.carta_love {
+    background-color: #fff;
+    border: 2px solid #c0392b;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: entrar 2s ease-in-out;
+    max-width: 500px;
+}
+
+@keyframes entrar {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.corazon {
+    width: 100px;
+    margin-bottom: 20px;
+    animation: girar 4s infinite linear;
+}
+
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.carta_love h1 {
+    color: #c0392b;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5em;
+}
+
+.carta_love p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.carta_love button {
+    background-color: #c0392b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    animation: boton 1s infinite alternate;
+    font-size: 1.2em;
+}
+
+@keyframes boton {
+    from { background-color: #c0392b; }
+    to { background-color: #a83226; }
+}
+
+#sorpresa {
+    color: #c0392b;
+    font-weight: bold;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: sorpresa 1s forwards;
+}
+
+@keyframes sorpresa {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.sorpresa {
+    width: 200px;
+    margin-top: 10px;
+    border: 2px solid #c0392b;
+    border-radius: 10px;
+    animation: resplandor 2s infinite alternate;
+}
+
+@keyframes resplandor {
+    from { box-shadow: 0 0 10px #c0392b; }
+    to { box-shadow: 0 0 20px #e74c3c; }
+}
